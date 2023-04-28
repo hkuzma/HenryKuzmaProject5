@@ -66,27 +66,39 @@ Include the following in this section of your README.md file:
 ## Henry Kuzma Report
 * My Data Set is all the nominations from every oscar ceremony since they began using datatypes row (string), year_release (int) Ceremony (int), Category (string), *name (string), film(string), and winner (string (either TRUE or FALSE))
 ## GRAPHS
-![example graph](plots/Quadratic Probing; Hash Function 1; Table Size_ 11,500 .png)
-![example graph](plots/Quadratic Probing; Hash Function 1; Table Size_ 15,000 .png)
-![example graph](plots/Quadratic Probing; Hash Function 1; Table Size_ 17,500 .png)
-![example graph](plots/Quadratic Probing; Hash Function 1; Table Size_ 22,000.png)
-![example graph](plots/Quadratic Probing; Hash Function 1; Table Size_ 25,000.png)
-![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
-![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
-![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
-![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
-![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
-![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
-![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
-![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
-![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
-![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
-![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
-![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
-![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
-![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
-![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
-![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
+![Quadratic Probing; Hash Function 1; Table Size_ 11,500 .png](plots%2FQuadratic%20Probing%3B%20Hash%20Function%201%3B%20Table%20Size_%2011%2C500%20.png)
+![Quadratic Probing; Hash Function 1; Table Size_ 15,000 .png](plots%2FQuadratic%20Probing%3B%20Hash%20Function%201%3B%20Table%20Size_%2015%2C000%20.png)
+![Quadratic Probing; Hash Function 1; Table Size_ 17,500 .png](plots%2FQuadratic%20Probing%3B%20Hash%20Function%201%3B%20Table%20Size_%2017%2C500%20.png)
+![Quadratic Probing; Hash Function 1; Table Size_ 22,000.png](plots%2FQuadratic%20Probing%3B%20Hash%20Function%201%3B%20Table%20Size_%2022%2C000.png)
+![Quadratic Probing; Hash Function 1; Table Size_ 25,000.png](plots%2FQuadratic%20Probing%3B%20Hash%20Function%201%3B%20Table%20Size_%2025%2C000.png)
+
+![Quadratic Probing; Hash Function 2; Table Size_ 11,500 .png](plots%2FQuadratic%20Probing%3B%20Hash%20Function%202%3B%20Table%20Size_%2011%2C500%20.png)
+![Quadratic Probing; Hash Function 2; Table Size_ 15,000.png](plots%2FQuadratic%20Probing%3B%20Hash%20Function%202%3B%20Table%20Size_%2015%2C000.png)
+![Quadratic Probing; Hash Function 2; Table Size_ 17,500.png](plots%2FQuadratic%20Probing%3B%20Hash%20Function%202%3B%20Table%20Size_%2017%2C500.png)
+![Quadratic Probing; Hash Function 2; Table Size_ 22,000.png](plots%2FQuadratic%20Probing%3B%20Hash%20Function%202%3B%20Table%20Size_%2022%2C000.png)
+![Quadratic Probing; Hash Function 2; Table Size_ 25,000.png](plots%2FQuadratic%20Probing%3B%20Hash%20Function%202%3B%20Table%20Size_%2025%2C000.png)
+
+
+![Separate Chaining; Hash Function 1; Table Size_ 11,500.png](plots%2FSeparate%20Chaining%3B%20Hash%20Function%201%3B%20Table%20Size_%2011%2C500.png)
+![Separate Chaining; Hash Function 1; Table Size_ 15,000.png](plots%2FSeparate%20Chaining%3B%20Hash%20Function%201%3B%20Table%20Size_%2015%2C000.png)
+![Separate Chaining; Hash Function 1; Table Size_ 17,500.png](plots%2FSeparate%20Chaining%3B%20Hash%20Function%201%3B%20Table%20Size_%2017%2C500.png)
+![Separate Chaining; Hash Function 1; Table Size_ 22,000.png](plots%2FSeparate%20Chaining%3B%20Hash%20Function%201%3B%20Table%20Size_%2022%2C000.png)
+![Separate Chaining; Hash Function 1; Table Size_ 25,000.png](plots%2FSeparate%20Chaining%3B%20Hash%20Function%201%3B%20Table%20Size_%2025%2C000.png)
+
+![Separate Chaining; Hash Function 2; Table Size_ 11,500.png](plots%2FSeparate%20Chaining%3B%20Hash%20Function%202%3B%20Table%20Size_%2011%2C500.png)
+![Separate Chaining; Hash Function 2; Table Size_ 15,000.png](plots%2FSeparate%20Chaining%3B%20Hash%20Function%202%3B%20Table%20Size_%2015%2C000.png)
+![Separate Chaining; Hash Function 2; Table Size_ 17,500.png](plots%2FSeparate%20Chaining%3B%20Hash%20Function%202%3B%20Table%20Size_%2017%2C500.png)
+![Separate Chaining; Hash Function 2; Table Size_ 22,000.png](plots%2FSeparate%20Chaining%3B%20Hash%20Function%202%3B%20Table%20Size_%2022%2C000.png)
+![Separate Chaining; Hash Function 2; Table Size_ 25,000.png](plots%2FSeparate%20Chaining%3B%20Hash%20Function%202%3B%20Table%20Size_%2025%2C000.png)
+
+*As the Table Size increases, Generally the number of reads decreased. This makes sense because a larger hash table would expect less
+*collisions since the mod would create more equal values.
+
+*Using Separate chaining, my first getkey function was more efficient, however when using quadratic probing, the second getkey function was more efficient.
+
+*With that being said, separate chaining was by far the more efficient algorithm. As such my first getkey function, in combination with separate chaining
+*would be the most efficient sort.
+
 
 ## Submit
 You must include your source (all .cpp and .h) files, your data (.csv) file(s), your output file(s), CMakeLists.txt, and your updated README.md file that contains your report to your repository. Submit to Gradescope using the GitHub repository link, double-check that all the correct files are there, and wait for the autograder to provide feedback.
