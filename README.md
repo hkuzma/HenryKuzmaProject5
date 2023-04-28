@@ -63,6 +63,31 @@ Include the following in this section of your README.md file:
 
 **Note: Any code that was not authored by yourself or the instructor must be cited in your report. This includes the use of concepts not taught in lecture.**
 
+## Henry Kuzma Report
+* My Data Set is all the nominations from every oscar ceremony since they began using datatypes row (string), year_release (int) Ceremony (int), Category (string), *name (string), film(string), and winner (string (either TRUE or FALSE))
+## GRAPHS
+![example graph](plots/Quadratic Probing; Hash Function 1; Table Size_ 11,500 .png)
+![example graph](plots/Quadratic Probing; Hash Function 1; Table Size_ 15,000 .png)
+![example graph](plots/Quadratic Probing; Hash Function 1; Table Size_ 17,500 .png)
+![example graph](plots/Quadratic Probing; Hash Function 1; Table Size_ 22,000.png)
+![example graph](plots/Quadratic Probing; Hash Function 1; Table Size_ 25,000.png)
+![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
+![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
+![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
+![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
+![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
+![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
+![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
+![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
+![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
+![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
+![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
+![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
+![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
+![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
+![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
+![example graph](plots/Bubble%20Sort_%20Reads%20and%20Writes%20(1).png)
+
 ## Submit
 You must include your source (all .cpp and .h) files, your data (.csv) file(s), your output file(s), CMakeLists.txt, and your updated README.md file that contains your report to your repository. Submit to Gradescope using the GitHub repository link, double-check that all the correct files are there, and wait for the autograder to provide feedback.
 

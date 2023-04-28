@@ -50,11 +50,11 @@ public:
     }
 
     // Insert
-    bool insert(Keyable item) {
+    bool insert(Keyable item, int& reads) {
         // Get the key from the item
         string key = getKey(item);
         // If the item is already in the table, do not insert it
-        if (!find(key)) {
+        if (!find(key, reads)) {
             // Hash the key to get an index
             unsigned long index = hornerHash(key);
             // Put the item at that index in the table
@@ -65,15 +65,19 @@ public:
     }
 
     // Find
-    optional<Keyable> find(string key) const {
+    optional<Keyable> find(string key, int&reads) const {
         // Hash the key to get an index
         unsigned long index = hornerHash(key);
         // Check each item in the list at the index to see if the key matches
         for (auto it = table[index].begin(); it != table[index].end(); ++it) {
+            //1 read
             if (getKey(*it) == key) {
                 // We found the item
+                //1 read
+                reads++;
                 return *it;
             }
+            reads++;
         }
         // We didn't find the item
         return nullopt;

@@ -1,6 +1,5 @@
 #ifndef HASHING_OPENADDRESSING_H
 #define HASHING_OPENADDRESSING_H
-
 #include <functional>
 #include <iostream>
 #include <optional>
@@ -9,7 +8,7 @@
 using std::cout, std::endl, std::function, std::nullopt, std::optional, std::string, std::vector;
 
 template<typename Keyable>
-class LinearProbing {
+class QuadraticProbing {
 private:
     enum state {EMPTY, FILLED, REMOVED};
     struct hashable {
@@ -46,7 +45,7 @@ private:
         return (n-2);
     }
 
-    void rehash() {
+    void rehash(int& reads) {
         // Store a copy of the hash table
         vector<hashable> oldTable = table;
 
@@ -60,15 +59,17 @@ private:
         // Reinsert all FILLED items
         for (int i = 0; i < oldTable.size(); ++i) {
             if (oldTable[i].status == FILLED) {
-                insert(oldTable[i].item);
+                insert(oldTable[i].item, reads);
+                reads++;
             }
+            reads++;
         }
 
     }
 
 public:
     // Constructor
-    LinearProbing(unsigned long tableSize, function<string(Keyable)> getKey) {
+    QuadraticProbing(unsigned long tableSize, function<string(Keyable)> getKey) {
         // This will fill the table with default Keyables and EMPTY statuses
         table.resize(nextPrime(tableSize));
         this->getKey = getKey;
@@ -76,25 +77,32 @@ public:
     }
 
     // Insert
-    void insert(Keyable item) {
+    void insert(Keyable item, int& reads) {
         // Get the key from the item
         string key = getKey(item);
-        if (!find(key)) {
+        if (!find(key, reads)) {
             // Hash the key to get an index
             unsigned long index = hornerHash(key);
             // Probe until we find a non-filled index
+            //1 read
+            int i=0;
             while (table[index].status == FILLED) {
+                reads ++;
                 // Add one to the index for linear probing
-                index += 1;
+                //change for quadratic
+                index += i*i;
                 index %= table.size();
+                i++;
             }
             table[index].item = item;
+            //1 read
             if (table[index].status == EMPTY) {
+                reads++;
                 ++numItems;
                 table[index].status = FILLED;
                 // Rehash when more than half the table is filled
                 if (numItems > table.size()/2) {
-                    rehash();
+                    rehash(reads);
                 }
             } else {
                 table[index].status = FILLED;
@@ -103,18 +111,26 @@ public:
     }
 
     // Find
-    optional<Keyable> find(string key) const {
+    optional<Keyable> find(string key, int& reads) const {
         // Hash the key to get an index
         unsigned long index = hornerHash(key);
+        int i=0;
         while (table[index].status != EMPTY) {
+            reads ++;
             // Check the index to see if the key matches
+            //1 read
             if (table[index].status == FILLED && getKey(table[index].item) == key) {
                 // We found the item
+                reads++;
                 return table[index].item;
             }
+            reads++;
+            reads++;
             // Add one to the index for linear probing
-            index += 1;
+            //change for quadratic
+            index += i*i;
             index %= table.size();
+            i++;
         }
         // We didn't find the item
         return nullopt;
@@ -124,6 +140,7 @@ public:
     bool remove(string key) {
         // Hash the key to get an index
         unsigned long index = hornerHash(key);
+        int i =0;
         while (table[index].status != EMPTY) {
             // Check the index to see if the key matches
             if (table[index].status == FILLED && getKey(table[index].item) == key) {
@@ -134,8 +151,11 @@ public:
                 return true;
             }
             // Add one to the index for linear probing
-            index += 1;
+            //change for quadratic
+
+            index += i*i;
             index %= table.size();
+            i++;
         }
         // We didn't find the item
         return false;
@@ -154,6 +174,9 @@ public:
             cout << endl;
         }
         cout << "End of table" << endl;
+    }
+    int getTableSize(){
+        return table.size();
     }
 };
 
